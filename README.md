@@ -3,7 +3,7 @@
 
 ## Solvers
 There are three solvers:
-1. Classic Runge-Kutta 4th order    ([src/runge_kutta4.hpp](https://github.com/andrew-sohn/ODE-Solver/blob/main/src/runge_kutta4.hpp))
+1. Classical Runge-Kutta 4th order    ([src/runge_kutta4.hpp](https://github.com/andrew-sohn/ODE-Solver/blob/main/src/runge_kutta4.hpp))
 2. Dormand-Prince with fixed step size    ([src/rkdp.hpp](https://github.com/andrew-sohn/ODE-Solver/blob/main/src/rkdp.hpp))
 3. Dormand-Prince with adaptive step size    ([src/rkdp-adaptive.hpp](https://github.com/andrew-sohn/ODE-Solver/blob/main/src/rkdp-adaptive.hpp))
 
