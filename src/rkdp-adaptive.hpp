@@ -246,7 +246,6 @@ class rkdp_adaptive
         system(x_tmp, k6, t + c[4]);
         algebra::for_each8(x_tmp, x, k1, k2, k3, k4, k5, k6, scale_sum7(one, dt*35/384, 0, dt*500/1113, dt*125/192, -dt*2187/6784, dt*11/84));
         system(x_tmp, k7, t + c[5]);
-        //algebra::for_each9(x, x, k1, k2, k3, k4, k5, k6, k7, scale_sum8(one, b4[0],b4[1],b4[2],b4[3],b4[4],b4[5],b4[6]) );
 
         //error eval
         algebra::for_each9(x4, x, k1, k2, k3, k4, k5, k6, k7, scale_sum8(one, b4[0],b4[1],b4[2],b4[3],b4[4],b4[5],b4[6]) );
@@ -256,32 +255,7 @@ class rkdp_adaptive
         value_type err = 0;
         value_type errArray[x_size];
         value_type tol;
-        /*
-        value_type fac = pow(0.25,0.2);
 
-        for (int i = 0; i < x_size; i++)
-        {
-            tol = atol + max(x4[i], prev_x[i])*rtol;
-            err += pow(((x4[i]-x5[i])/tol),2);
-        }
-        err = pow(err/x_size, 0.5);
-        if (err <= 1)
-        {
-            // error below tolerance
-            x = prev_x = x5;
-            t += dt;
-        }
-        else if (err < 1e-2)
-        {
-            // adjust step size
-            dt = 5*dt;
-        }
-        else
-        {
-            // adjust step size
-            dt = fac*dt*pow((1/err),0.2);
-        }
-        */
         value_type fac = pow(0.25,0.2);
         for (int i = 0; i < x_size; i++)
         {
