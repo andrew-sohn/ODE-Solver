@@ -20,3 +20,4 @@ The structure of the solvers follow the information provided by the following pu
 
 *"Solving Ordinary Differential Equations on GPUs", Karsten Ahnert, Denis Demidov and Mario Mulansky*
 http://www.mariomulansky.de/data/uploads/ncwg.pdf
+https://www.researchgate.net/publication/303728047_Solving_ordinary_differential_equations_on_GPUs
